@@ -1,9 +1,12 @@
-import express from "express";
 import cors from "cors";
+import { eq, sql } from "drizzle-orm";
+import express from "express";
 import { db } from "../src/db";
-import { todos } from "../src/db/schema";
-import { validateInsertTodo, validateUpdateTodo } from "../src/db/schema";
-import { sql, eq } from "drizzle-orm";
+import {
+  todos,
+  validateInsertTodo,
+  validateUpdateTodo,
+} from "../src/db/schema";
 
 // Create Express app
 const app = express();
@@ -22,7 +25,8 @@ app.get(`/api/health`, (_req, res) => {
 async function generateTxId(tx: any): Promise<number> {
   // This is specific to postgres and how electricsql works
   const [{ txid }] = await tx.execute(sql`SELECT txid_current() as txid`);
-  return Number(txid);
+  // Ensure we return a proper number, handling both string and bigint cases
+  return typeof txid === "string" ? parseInt(txid, 10) : Number(txid);
 }
 
 // ===== TODOS API =====

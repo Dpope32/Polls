@@ -1,4 +1,3 @@
-version: "3.3"
 name: "electric_expo_db_quickstart"
 
 services:
