@@ -1,6 +1,6 @@
 import React from "react";
 import { Text as RNText, TextProps as RNTextProps, StyleSheet } from "react-native";
-import { colors } from "../lib/styles";
+import { colors } from "../app/styles/colors";
 
 interface TextProps extends RNTextProps {
   variant?: "h1" | "h2" | "h3" | "h4" | "p" | "lead" | "large" | "small" | "muted";

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Input } from './Input';
 import { Button } from './Button';
-import { colors } from '../lib/styles';
+import { colors } from '../app/styles/colors';
 import { Text } from './Text';
 
 interface TodoInputProps {

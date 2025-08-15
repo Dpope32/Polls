@@ -1,8 +1,8 @@
 import { ShapeStream } from "@electric-sql/client";
 import { createCollection } from "@tanstack/react-db";
 import "react-native-random-uuid";
-import { selectTodoSchema } from "../src/db/schema";
-import { apiClient, hostname } from "../src/utils/api-client";
+import { selectTodoSchema } from "../../src/db/schema";
+import { apiClient, hostname } from "../../src/utils/api-client";
 
 export const todoCollection = createCollection({
   id: "todos",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Todo } from '../app/types/todo';
-import { colors } from '../lib/styles';
+import { colors } from '../app/styles/colors';
 
 interface TodoItemProps {
   todo: Todo;

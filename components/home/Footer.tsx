@@ -1,7 +1,7 @@
 import { Button } from "../Button";
 import { View, Image, StyleSheet } from "react-native";
 import { Text } from "../Text";
-import { colors } from "@/lib/styles";
+import { colors } from "@/app/styles/colors";
 
 export function Footer() {
     return (

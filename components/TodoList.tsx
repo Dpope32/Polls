@@ -2,7 +2,7 @@ import React from 'react';
 import { FlatList, View, Text, StyleSheet } from 'react-native';
 import { Todo } from '../app/types/todo';
 import { TodoItem } from './TodoItem';
-import { colors } from '../lib/styles';
+import { colors } from '../app/styles/colors';
 
 interface TodoListProps {
   todos: Todo[];

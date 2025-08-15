@@ -1,5 +1,5 @@
 import { useLiveQuery } from "@tanstack/react-db";
-import { todoCollection } from "../todoCollection";
+import { todoCollection } from "../collections/todoCollection";
 import { TodoOperations } from "../types/todo";
 
 export function useTodos(): { todos: any[]; operations: TodoOperations } {
