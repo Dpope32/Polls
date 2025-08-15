@@ -35,7 +35,8 @@ export function validateInsertTodo(data: unknown) {
 }
 
 export function validateUpdateTodo(data: unknown) {
-  return updateTodoSchema.parse(data);
+  // Only allow updating user-controlled fields; ignore timestamps from client
+  return updateTodoSchema.pick({ text: true, completed: true }).parse(data);
 }
 
 export type Todo = z.infer<typeof selectTodoSchema>;

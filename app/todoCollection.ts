@@ -79,7 +79,9 @@ export const todoCollection = createCollection({
       original: { id },
       changes,
     } = transaction.mutations[0];
-    const { txid } = await apiClient.updateTodo(id, changes);
+    // Filter out fields that shouldn't be sent to the API
+    const { id: _, created_at, updated_at, ...updateData } = changes;
+    const { txid } = await apiClient.updateTodo(id, updateData);
     return { txid };
   },
   onDelete: async ({ transaction }) => {

@@ -1,6 +1,8 @@
-# Expo, TanStack DB, and Electric Starter
+# Kaiba Core
 
-https://github.com/user-attachments/assets/b4be50e9-3ab1-4684-8964-26defdfcfeb6
+A modern React Native application built with Expo, TanStack DB, and ElectricSQL.
+
+<https://github.com/user-attachments/assets/b4be50e9-3ab1-4684-8964-26defdfcfeb6>
 
 ## Why these technologies?
 
@@ -14,28 +16,21 @@ ElectricSQL is a Postgres sync engine that solves the hard problems of data sync
 
 ## Key Files
 
-*   [`app/index.tsx`](./app/index.tsx) - The main entry point for the Expo application.
-*   [`api/index.ts`](./api/index.ts) - The entry point for your serverless functions (if you choose to use them).
-*   [`src/db/schema.ts`](./src/db/schema.ts) - The database schema definition for ElectricSQL.
+* [`app/index.tsx`](./app/index.tsx) - The main entry point for the Expo application.
+* [`api/index.ts`](./api/index.ts) - The entry point for your serverless functions (if you choose to use them).
+* [`src/db/schema.ts`](./src/db/schema.ts) - The database schema definition for ElectricSQL.
 
-## Create a new project
-
-To create a new project based on this starter, run the following commands:
-
-```
-npx gitpick electric-sql/electric/tree/main/examples/tanstack-db-expo-starter my-tanstack-db-expo-project
-cd my-tanstack-db-expo-project
-```
+## Getting Started
 
 ## Setup
 
-1.  Install dependencies:
+1. Install dependencies:
 
     ```bash
     pnpm i
     ```
 
-2.  Start the development server & API server in different terminals:
+2. Start the development server & API server in different terminals:
 
     ```bash
     pnpm start
@@ -45,7 +40,7 @@ cd my-tanstack-db-expo-project
     pnpm api
     ```
 
-3.  Push database schema changes:
+3. Push database schema changes:
 
     ```bash
     pnpm db:push
@@ -53,5 +48,4 @@ cd my-tanstack-db-expo-project
 
 ## Notes
 
-*   [`react-native-random-uuid`](https://github.com/LinusU/react-native-random-uuid) is needed as a polyfill for TanStack DB on React Native/Expo.
-
+* [`react-native-random-uuid`](https://github.com/LinusU/react-native-random-uuid) is needed as a polyfill for TanStack DB on React Native/Expo.

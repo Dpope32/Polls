@@ -13,6 +13,16 @@ export const styles = StyleSheet.create({
       marginBottom: 20,
       textAlign: "center",
     },
+    text: {
+        color: "#000",
+        fontSize: 16,
+        fontWeight: "bold",
+        textAlign: "center",
+        marginBottom: 20,
+        marginTop: 40,
+        marginLeft: 20,
+        marginRight: 20,
+    },
     inputContainer: {
       flexDirection: "row",
       marginBottom: 20,
@@ -56,5 +66,16 @@ export const styles = StyleSheet.create({
       color: "#ff3b30",
       fontWeight: "bold",
       fontSize: 16,
+    },
+    emptyContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      paddingVertical: 40,
+    },
+    emptyText: {
+      fontSize: 16,
+      color: "#aaa",
+      textAlign: "center",
     },
   });
