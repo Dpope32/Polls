@@ -24,6 +24,7 @@
     "date-fns": "^4.1.0",
     "drizzle-orm": "^0.44.3",
     "drizzle-zod": "^0.8.2",
+    "esbuild": "^0.25.9",
     "expo": "53.0.20",
     "expo-constants": "^17.1.7",
     "expo-router": "~5.1.4",
@@ -49,7 +50,7 @@
     "concurrently": "^9.2.0",
     "dotenv": "^16.5.0",
     "drizzle-kit": "^0.31.4",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.4",
     "typescript": "~5.8.3"
   },
   "plugins": [
