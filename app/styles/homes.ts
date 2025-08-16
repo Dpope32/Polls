@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
 import { colors } from "@/app/styles/colors";
+import { StyleSheet } from "react-native";
 
 export const homeStyles = StyleSheet.create({
   background: {

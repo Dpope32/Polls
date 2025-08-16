@@ -2,7 +2,7 @@
 
 ## Root Directory Organization
 
-```
+```i
 kaiba-core/
 ├── app/                    # Expo Router app directory (main screens)
 ├── components/             # Reusable UI components
